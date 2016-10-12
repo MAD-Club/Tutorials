@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Author: Adam Bazzi
+         Modified By: James Pierce
+		 Date: October 4th 2016
+		 Purpose: To explain arrays in JavaScript
+		 ProgramName: ArrayExample.html-->
+	<title>Arrays in Javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Arrays are used to store multiple values in a single variables
+		//Arrays are useful so you can keep your code more organized and have
+		//unnessary variables removed.
+
+		//Normally you could declare your variables like this
+		var BR = "<br />";
+        var darren = "Darren";
+		var cai = "Cai";
+
+		//With arrays you can combine both of these as they have simillar purposes
+		var teachers = ["Darren", "Cai", "Peter", "Nicholas"];
+        
+
+		//The way you declare an item in an array is to call the variable name with 
+		//the corresponding number of the item in square brackets, for example
+
+		document.write(teachers[1] + " gives out alot of homework" + BR);
+		document.write(teachers[0] + " plays kahoot in class" + BR);
+       
+        // This will loop through all the entries in the array. 
+        //It uses teachers.length to find the length of the array.
+        for(var i = 0; i < teachers.length; i++){
+            // Outputs the teachers name
+            document.write(teachers[i] + ", ");
+        }
+        // This will append this to the previous output of the teachers names.
+        document.write("are all teachers at St.Cair.");
+        
+        
+	</script>
+
+</body>
+</html>
