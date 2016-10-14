@@ -12,6 +12,7 @@ Not really a tutorial, but these are some useful tools/links that may help you w
 * Atom - Github's Text Editor. The other good alternative
 * JSFiddle - JavaScript Fiddling around. (https://jsfiddle.net/)
 * Heroku - Cloud Host. I think it should be free for students, not 100%, but the ability to use git push deployments is great. (https://www.heroku.com/)
+* ViewPager Page Indicator - Nexus like Circle indicator meant for use with ViewPagers. (https://github.com/ongakuer/CircleIndicator)
 
 ---
 
