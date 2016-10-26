@@ -1,0 +1,83 @@
+<html>
+    <body>
+        <script>
+            
+            // Author: James Pierce
+            // Program Name: Loop Examples
+            // Purpose: Demonstrate different examples of nested if statements within different loops
+            // There are THREE different loops in this program, with three different purposes.
+            
+            var BR = "<br />";
+            var ES = "";
+            
+            // This example will output all of the even numbers between 1 and 20
+            
+             // Separate the loops 
+            document.write("--------------------------------------------------------------------" + BR
+                        + "First Loop" + BR
+                        + "--------------------------------------------------------------------" + BR + BR);
+            
+            // FOR LOOP
+            // Loop through 1 - 20
+            for(var i = 1; i <= 20; i++){
+                
+                // Test to see if the number is even (if i % 2 == 0, it is even)
+                // % is the modulus operator, which will give us either 1 or 0
+                // 1 means the number is odd, 0 means it is even
+                if(i % 2 == 0){
+                    document.write("The number " + i + " is even." + BR);
+                } else {
+                    document.write(i + " is odd." + BR);
+                }
+                
+            }
+            
+            // Separate the loops 
+            document.write(BR + "--------------------------------------------------------------------" + BR
+                        + "Second Loop" + BR
+                        + "--------------------------------------------------------------------" + BR + BR);
+            
+            // WHILE LOOP
+            // This example will output all the numbers divisible by 5 between 1 and 20
+            
+            // Loop through 1 - 20
+            var number = 1;
+            while(number <= 20){
+                if(number % 5 == 0){
+                    document.write("The number " + number + " is divisible by 5." + BR);
+                }
+                // Increment number
+                number++;
+            }
+            
+            // Separate the loops 
+            document.write(BR + "--------------------------------------------------------------------" + BR
+                        + "Third Loop" + BR
+                        + "--------------------------------------------------------------------" + BR + BR);
+            
+            // DO WHILE LOOP
+            // This example will output whether or not a number is even or odd, after taking user input.
+            
+            alert("This loop will continue until you type 0 to exit.");
+            do{
+                
+                input = prompt("Please enter an integer number or 0 to exit:", ES);
+                input = parseInt(input);
+                
+                if(input % 2 == 0){
+                    document.write("The number " + input + " you entered is even." + BR);
+                } else if(input % 2 == 1){
+                    document.write("The number " + input + " you entered is odd." + BR);  
+                } else {
+                    document.write("There was something wrong with your input " + input + ", please try again." + BR);
+                }
+                
+            }while(input != 0);
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
+
