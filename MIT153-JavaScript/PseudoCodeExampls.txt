@@ -1,0 +1,53 @@
+// This is a comment, You will use these to explain your code in both PseudoCode and JavaScript
+
+// You will start all Pseudocode with start
+Start
+
+// Declaring a variable that is a number
+Declare Numeric num1
+
+// Declaring a variable that is a number with a value
+Declare Numeric num2 = 20
+
+// Declaring a variable that is a string
+Declare String name
+
+// Declaring a variable that is a string with a value
+Declare String name = "James"
+
+	//Declare all variables required by the program.
+	Declare Numeric day1, day2, day3, day4, day5, totalHours, totalCost
+	Declare String companyName
+	Declare Constant RATE = 30
+	
+	//Request the required information from the user.
+	Display "Please enter the name of the company being worked for : "
+	Input companyName
+	
+	Display "Enter how many hours you worked Day 1 : "
+	Input day1
+	
+	Display "Enter how many hours you worked Day 2 : "
+	Input day2
+	
+	Display "Enter how many hours you worked Day 3 : "
+	Input day3
+	
+	Display "Enter how many hours you worked Day 4 : "
+	Input day4
+	
+	Display "Enter how many hours you worked Day 5 : "
+	Input day5
+	
+	//Calculate totalHours and totalCost.
+	totalHours = day1 + day2 + day3 + day4 + day5
+	
+	totalCost = totalHours * RATE
+	
+	//Output final statements.
+	Display "Watt Gives Invoice to " + companyName + "."
+	Display "We worked a total of " + totalHours + " at a rate of " + RATE + " per hour."
+	Display "The final invoice comes to : " + totalCost
+	
+// You will end all Pseudocode with stop
+Stop
