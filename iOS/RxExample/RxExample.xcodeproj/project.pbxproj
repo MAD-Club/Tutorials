@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		40AD8A7C1F7F27D50046E0F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD8A7B1F7F27D50046E0F9 /* AppDelegate.swift */; };
 		40AD8A7E1F7F27D50046E0F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD8A7D1F7F27D50046E0F9 /* ViewController.swift */; };
-		40AD8A811F7F27D50046E0F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40AD8A7F1F7F27D50046E0F9 /* Main.storyboard */; };
 		40AD8A831F7F27D50046E0F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AD8A821F7F27D50046E0F9 /* Assets.xcassets */; };
 		40AD8A861F7F27D50046E0F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40AD8A841F7F27D50046E0F9 /* LaunchScreen.storyboard */; };
 		E82820C0B10BEB78AC665C97 /* Pods_RxExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE115B6C775EA0511A07D5E /* Pods_RxExample.framework */; };
@@ -19,7 +18,6 @@
 		40AD8A781F7F27D50046E0F9 /* RxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AD8A7B1F7F27D50046E0F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40AD8A7D1F7F27D50046E0F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		40AD8A801F7F27D50046E0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40AD8A821F7F27D50046E0F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40AD8A851F7F27D50046E0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40AD8A871F7F27D50046E0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			children = (
 				40AD8A7B1F7F27D50046E0F9 /* AppDelegate.swift */,
 				40AD8A7D1F7F27D50046E0F9 /* ViewController.swift */,
-				40AD8A7F1F7F27D50046E0F9 /* Main.storyboard */,
 				40AD8A821F7F27D50046E0F9 /* Assets.xcassets */,
 				40AD8A841F7F27D50046E0F9 /* LaunchScreen.storyboard */,
 				40AD8A871F7F27D50046E0F9 /* Info.plist */,
@@ -152,7 +149,6 @@
 			files = (
 				40AD8A861F7F27D50046E0F9 /* LaunchScreen.storyboard in Resources */,
 				40AD8A831F7F27D50046E0F9 /* Assets.xcassets in Resources */,
-				40AD8A811F7F27D50046E0F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,13 +195,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxExample/Pods-RxExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -227,14 +221,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		40AD8A7F1F7F27D50046E0F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40AD8A801F7F27D50046E0F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		40AD8A841F7F27D50046E0F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,6 +286,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -349,6 +336,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -363,7 +351,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "johnny.nguyen39-stclairconnect.ca.RxExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -378,7 +366,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "johnny.nguyen39-stclairconnect.ca.RxExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
