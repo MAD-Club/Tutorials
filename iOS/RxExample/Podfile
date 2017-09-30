@@ -1,9 +1,9 @@
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'RxExample' do
   use_frameworks!
 
   # Pods for RxExample
   pod 'RxSwift'
-  pod 'Rxcocoa'
+  pod 'RxCocoa'
 end
