@@ -1,0 +1,8 @@
+platform :ios, '11.0'
+
+target 'RxExample' do
+  use_frameworks!
+
+  # Pods for RxExample
+  pod 'SnapKit'
+end
