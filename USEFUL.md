@@ -23,6 +23,7 @@ Not really a tutorial, but these are some useful tools/links that may help you w
 * 9-patch image generator - Particularly useful when you want to load big images efficiently. (https://romannurik.github.io/AndroidAssetStudio/nine-patches.html)
 * Bootstrap - Web Framework, makes it easy for mobile phone usage (http://getbootstrap.com/)
 * ViewPager Page Indicator - Nexus like Circle indicator meant for use with ViewPagers. (https://github.com/ongakuer/CircleIndicator)
+* iTerm2 (For Mac only) - An enchanced terminal, for mac users. Makes developement process much easier.
 
 ---
 
